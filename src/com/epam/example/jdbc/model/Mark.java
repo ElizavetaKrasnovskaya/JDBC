@@ -1,6 +1,6 @@
 package com.epam.example.jdbc.model;
 
-public class Color {
+public class Mark {
     private int id;
     private String name;
 
@@ -22,7 +22,7 @@ public class Color {
 
     @Override
     public String toString() {
-        return "Color" +
+        return "Mark" +
                 " id = " + id +
                 ", name = " + name;
     }

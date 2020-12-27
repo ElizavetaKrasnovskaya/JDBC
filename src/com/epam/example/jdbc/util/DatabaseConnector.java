@@ -14,12 +14,12 @@ public class DatabaseConnector {
         return connection;
     }
 
-    public void startConnection(){
-        try{
+    public void startConnection() {
+        try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             connection = DriverManager.getConnection(URL, USER, PASSWORD);
 
-        }catch (SQLException | ClassNotFoundException ex){
+        } catch (SQLException | ClassNotFoundException ex) {
             ex.printStackTrace();
         }
     }
